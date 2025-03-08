@@ -362,11 +362,8 @@ footer p {
 footer .social-icons a {
     text-decoration: none;
 }
-  
 
-/* ------------------------------------------ */
 /*   Teléfonos pequeños (352px - 480px)      */
-/* ------------------------------------------ */
 @media (max-width: 480px) {
   .contenido1 {
       width: 90%;
@@ -381,7 +378,7 @@ footer .social-icons a {
 
   .primero {
       flex-direction: column;
-      gap: 20px; /* Sobrescribe 1400px */
+      gap: 20px; 
       height: auto;
   }
   .primero img {
@@ -434,7 +431,6 @@ footer .social-icons a {
   .formulario-contacto form {
       width: 90%;
   }
-  /* Evitar overflow en inputs y textarea */
   .formulario-contacto input,
   .formulario-contacto textarea {
       width: 100%;
@@ -445,19 +441,17 @@ footer .social-icons a {
   }
   .footer-content {
       flex-direction: column;
-      gap: 30px; /* Sobrescribe 900px */
+      gap: 30px; 
   }
 }
 
-/* --------------------------------------------- */
 /*  Teléfonos grandes y tablets (481px-768px)    */
-/* --------------------------------------------- */
 @media (min-width: 481px) and (max-width: 768px) {
   .contenido1 h1 {
       font-size: 3rem;
   }
   .primero {
-      gap: 300px; /* en vez de 1400px */
+      gap: 300px; 
       height: auto;
   }
   .vista,
@@ -498,7 +492,7 @@ footer .social-icons a {
       width: 100%;
   }
   .footer-content {
-      gap: 50px; /* Sobrescribe 900px */
+      gap: 50px; 
   }
   .servicios{
     flex-wrap: wrap;
@@ -509,15 +503,13 @@ footer .social-icons a {
   }
 }
 
-/* --------------------------------------------- */
 /*  Tablets grandes y laptops pequeñas (769-920) */
-/* --------------------------------------------- */
 @media (min-width: 769px) and (max-width: 920px) {
   .contenido1 h1 {
       font-size: 3.5rem;
   }
   .primero {
-      gap: 450px; /* Menos exagerado que 1400px */
+      gap: 450px; 
   }
   .vista,
   .seguridad {
@@ -543,13 +535,11 @@ footer .social-icons a {
       width: 100%;
   }
   .footer-content {
-      gap: 100px; /* Sobrescribe 900px */
+      gap: 100px; 
   }
 }
 
-/* ---------------------------------------------- */
 /*  Laptops y monitores pequeños (921px-1279px)   */
-/* ---------------------------------------------- */
 @media (min-width: 921px) and (max-width: 1279px) {
   .contenido1 h1 {
       font-size: 4rem;
@@ -567,7 +557,6 @@ footer .social-icons a {
   .logos-empresas {
       justify-content: space-evenly;
   }
-  /* Ajustamos .primero y .footer-content si aún se ve scroll */
   .primero {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -578,9 +567,7 @@ footer .social-icons a {
   }
 }
 
-/* ---------------------------------- */
 /*   Monitores grandes (1280px +)     */
-/* ---------------------------------- */
 @media (min-width: 1280px) {
   .primero{
     justify-content: space-evenly;
@@ -595,7 +582,6 @@ footer .social-icons a {
   .logos-empresas {
       justify-content: space-evenly;
   }
-  /* Podemos conservar gap grande en pantallas muy grandes */
   .footer-content {
       gap: 900px;
   }
