@@ -1,0 +1,602 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+  
+.encabezado {
+    background: url(../Images/banner-bk.jpg) ;
+    color: white;
+    padding: 40px;
+    height: 500px;
+    position: relative;
+ }
+  
+.contenido1 {
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: left; 
+    padding-left: 5px;
+    padding-right: 45px; 
+    padding-bottom: 20px; 
+}
+
+.contenido1 h1 {
+    font-size: 4rem; 
+    margin-bottom: 30px; 
+    color: white;
+}
+
+.contenido1 p {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    color: rgb(221, 221, 221); 
+    margin-bottom: 40px;
+}
+
+.primero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 800px;
+    padding: 20px;
+    height: 70px;
+}
+
+.primero p , .primero img{
+  cursor: pointer;
+}
+  
+.primero img {
+  width: 80px;
+  height: 80px;
+}
+  
+.botones {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00c889;
+  color: #0e1b3d;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.0rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+  
+.botones2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0e1b3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.0rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;   
+}
+
+.botones:hover {
+  background-color: #0056b3; 
+  color: white ;
+}
+
+.botones2:hover {
+  background-color: white;
+  color: #0e1b3d;
+}
+
+.proteccion {
+  padding: 50px 20px 200px;
+  text-align: center;
+}
+  
+.servicios {
+  display: flex;
+  justify-content: center;
+}
+  
+.servicio {
+  margin-right: 100px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+  
+.vista{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 100px 200px;
+}
+
+.seguridad {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 100px 100px 100px;
+
+}
+
+.vista {
+  background: linear-gradient(170deg, white 50%, #00c889 50%);
+  color: black;
+  flex-direction: row;
+}
+
+.seguridad {
+  background: linear-gradient(160deg, #00c889 50%, #00c889 150%);
+  color: black;
+  flex-direction: row;
+}
+
+.vista img,
+.seguridad img {
+  max-width: 40%;
+  height: auto;
+}
+
+.contenido2 , .contenido3{
+  max-width: 45%;
+}
+
+.contenido2 p , .contenido3 p{
+  color: black;
+  margin-bottom: 45px;
+}
+
+
+.contenido2 h2 , .contenido3 h2 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.precios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 180px 10%;
+    position: relative;
+  }
+  
+  .precios h1 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 75px;
+  }
+  
+  .plan {
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    width: 17%;
+  }
+  
+  .plan.destacado {
+    background: #0e1b3d;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .plan h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .precio {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .precio span {
+    font-size: 0.6em;
+    font-weight: normal;
+    color: gray;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .plan ul li {
+    margin: 10px 0;
+  }
+  
+  .plan .boton {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #fff;
+    color: #0e1b3d;
+    border-radius: 25px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .plan.destacado .boton {
+    background: #00c889;
+    color: white;
+  }
+  
+  .contacto {
+    background: rgb(207, 207, 207);
+    color: white;
+    padding: 50px 10px;
+    text-align: center;
+  }
+  
+.logos-empresas {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+  
+.logos-empresas img {
+    max-width: 170px;
+    opacity: 1;
+}
+
+.formulario-contacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../Images/contact-bk.jpg);
+    color: white;
+    padding: 100px 20px;
+}
+
+.contacto-info {
+    width: 40%; 
+}
+
+.contacto-info h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contacto-info p {
+    margin-bottom: 10px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%; 
+}
+
+.formulario-contacto .campo {
+  display: flex;
+  flex-direction: column; 
+}
+
+.formulario-contacto label {
+  color: #00c889; 
+  margin-bottom: 5px; 
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border: 2px solid #00c889;
+    border-radius: 5px;
+}
+
+.formulario-contacto input {
+    width: 138%; 
+}
+
+.formulario-contacto textarea {
+    width: 96.2%; 
+    height: 60px;
+}
+
+.formulario-contacto button {
+    background: #00c889;
+    color: #0e1b3d;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cajas {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
+ 
+footer {
+    background-color: #0e1b3d;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 900px;
+}
+  
+footer p {
+    margin: 0;
+}
+  
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+  
+.social-icon img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+  
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+  
+footer .social-icons a {
+    text-decoration: none;
+}
+  
+
+/* ------------------------------------------ */
+/*   Teléfonos pequeños (352px - 480px)      */
+/* ------------------------------------------ */
+@media (max-width: 480px) {
+  .contenido1 {
+      width: 90%;
+      padding: 10px;
+  }
+  .contenido1 h1 {
+      font-size: 2rem;
+  }
+  .contenido1 p {
+      font-size: 1rem;
+  }
+
+  .primero {
+      flex-direction: column;
+      gap: 20px; /* Sobrescribe 1400px */
+      height: auto;
+  }
+  .primero img {
+      width: 60px;
+      height: 60px;
+  }
+  .botones, .botones2 {
+      font-size: 0.9rem;
+      padding: 8px 18px;
+  }
+  .servicios {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+  .servicio {
+      width: 80%;
+  }
+  .vista,
+  .seguridad {
+      flex-direction: column;
+      padding: 20px;
+  }
+  .vista img,
+  .seguridad img {
+      max-width: 90%;
+  }
+  .contenido2,
+  .contenido3 {
+      max-width: 100%;
+      text-align: center;
+  }
+  .precios {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .plan {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .logos-empresas {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+  }
+  .formulario-contacto {
+      flex-direction: column;
+  }
+  .contacto-info,
+  .formulario-contacto form {
+      width: 90%;
+  }
+  /* Evitar overflow en inputs y textarea */
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+      width: 100%;
+  }
+  .cajas {
+      flex-direction: column;
+      gap: 50px;
+  }
+  .footer-content {
+      flex-direction: column;
+      gap: 30px; /* Sobrescribe 900px */
+  }
+}
+
+/* --------------------------------------------- */
+/*  Teléfonos grandes y tablets (481px-768px)    */
+/* --------------------------------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contenido1 h1 {
+      font-size: 3rem;
+  }
+  .primero {
+      gap: 300px; /* en vez de 1400px */
+      height: auto;
+  }
+  .vista,
+  .seguridad {
+      flex-direction: column;
+      padding: 30px;
+  }
+  .vista img,
+  .seguridad img {
+      max-width: 80%;
+  }
+  .contenido2,
+  .contenido3 {
+      max-width: 90%;
+      text-align: center;
+  }
+  .precios {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .plan {
+      width: 45%;
+  }
+  .logos-empresas {
+      flex-wrap: wrap;
+      gap: 50px;
+  }
+  .formulario-contacto {
+      flex-direction: column;
+      gap: 30px;
+  }
+  .contacto-info,
+  .formulario-contacto form {
+      width: 80%;
+  }
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+      width: 100%;
+  }
+  .footer-content {
+      gap: 50px; /* Sobrescribe 900px */
+  }
+  .servicios{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+}
+
+/* --------------------------------------------- */
+/*  Tablets grandes y laptops pequeñas (769-920) */
+/* --------------------------------------------- */
+@media (min-width: 769px) and (max-width: 920px) {
+  .contenido1 h1 {
+      font-size: 3.5rem;
+  }
+  .primero {
+      gap: 450px; /* Menos exagerado que 1400px */
+  }
+  .vista,
+  .seguridad {
+      padding: 50px;
+  }
+  .vista img,
+  .seguridad img {
+      max-width: 50%;
+  }
+  .precios {
+      flex-wrap: wrap;
+      padding: 100px 5%;
+  }
+  .plan {
+      width: 30%;
+  }
+  .logos-empresas {
+      flex-wrap: wrap;
+      gap: 70px;
+  }
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+      width: 100%;
+  }
+  .footer-content {
+      gap: 100px; /* Sobrescribe 900px */
+  }
+}
+
+/* ---------------------------------------------- */
+/*  Laptops y monitores pequeños (921px-1279px)   */
+/* ---------------------------------------------- */
+@media (min-width: 921px) and (max-width: 1279px) {
+  .contenido1 h1 {
+      font-size: 4rem;
+  }
+  .vista img,
+  .seguridad img {
+      max-width: 40%;
+  }
+  .precios {
+      padding: 150px 10%;
+  }
+  .plan {
+      width: 25%;
+  }
+  .logos-empresas {
+      justify-content: space-evenly;
+  }
+  /* Ajustamos .primero y .footer-content si aún se ve scroll */
+  .primero {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 560px; 
+  }
+  .footer-content {
+      gap: 150px;
+  }
+}
+
+/* ---------------------------------- */
+/*   Monitores grandes (1280px +)     */
+/* ---------------------------------- */
+@media (min-width: 1280px) {
+  .primero{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .contenido1 h1 {
+      font-size: 4.5rem;
+  }
+  .precios {
+      padding: 180px 10%;
+  }
+  .logos-empresas {
+      justify-content: space-evenly;
+  }
+  /* Podemos conservar gap grande en pantallas muy grandes */
+  .footer-content {
+      gap: 900px;
+  }
+}
